@@ -1,6 +1,6 @@
 # The 1PPM Website
 
-This is going to be an AngularJS project.
+This is going to be an Angular 1/2 or React project.
 
 *Work in progress*
 
