@@ -37,5 +37,17 @@
            timeToLiveSeconds="3600">
     </cache>
 
+    <cache name="club.oneppm.domain.Member"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="club.oneppm.domain.Member.projects"
+        timeToLiveSeconds="3600">
+    </cache>
+
+    <cache name="club.oneppm.domain.Project"
+        timeToLiveSeconds="3600">
+    </cache>
+
     <!-- jhipster-needle-ehcache-add-entry -->
 </ehcache>

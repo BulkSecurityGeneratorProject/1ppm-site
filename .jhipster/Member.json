@@ -1,0 +1,37 @@
+{
+    "fluentMethods": true,
+    "relationships": [
+        {
+            "relationshipType": "one-to-many",
+            "relationshipName": "project",
+            "otherEntityName": "project",
+            "otherEntityRelationshipName": "member"
+        }
+    ],
+    "fields": [
+        {
+            "fieldName": "username",
+            "fieldType": "String",
+            "fieldValidateRules": [
+                "required"
+            ]
+        },
+        {
+            "fieldName": "githubUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "otherUrl",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "twitter",
+            "fieldType": "String"
+        }
+    ],
+    "changelogDate": "20170105230214",
+    "entityTableName": "member",
+    "dto": "no",
+    "pagination": "pagination",
+    "service": "serviceImpl"
+}

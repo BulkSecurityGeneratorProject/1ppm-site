@@ -1,5 +1,5 @@
 // Very simplest user model
-entity User {
+entity Member {
 	username String required
     githubUrl String
     otherUrl String
@@ -21,11 +21,11 @@ entity Project {
 
 /* Also may be ManyToMay if we'll have collaborating projects */
 relationship OneToMany {
-	User{project} to Project
+	Member{project} to Project
 }
 
 
-paginate User, Project with pagination
+paginate Member, Project with pagination
 
 // Not sure about services
 service all with serviceImpl
