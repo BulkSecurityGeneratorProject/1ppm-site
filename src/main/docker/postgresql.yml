@@ -1,0 +1,12 @@
+version: '2'
+services:
+    1ppm-postgresql:
+        container_name: 1ppm-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/1ppm/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=1ppm
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432

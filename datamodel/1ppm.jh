@@ -1,0 +1,31 @@
+// Very simplest user model
+entity User {
+	username String required
+    githubUrl String
+    otherUrl String
+		twitter String
+}
+
+entity Project {
+	name String required
+    description String required
+    // But need fix few projects in HallOfFame.md to following this pattern
+    date String pattern("\d\d\d\d\d\d") required
+    url String
+    // Also may use enum, but it'll very strong i think
+    status String
+		date ZonedDateTime
+		logo String
+}
+
+
+/* Also may be ManyToMay if we'll have collaborating projects */
+relationship OneToMany {
+	User{project} to Project
+}
+
+
+paginate User, Project with pagination
+
+// Not sure about services
+service all with serviceImpl
